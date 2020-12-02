@@ -1,20 +1,19 @@
-package rec;
+package Q;
 
 public class Circle {
-	
+
 	double r;
-	final double PI = Math.PI;
-	
+
 	public double getR() {
 		return r;
 	}
-	public void setR(double r) {
+
+	public void setR(int r) {
 		this.r = r;
 	}
-	
+
 	public double getArea() {
-		return r*r*PI;
+		return r * r * Math.PI;
 	}
-	
 
 }

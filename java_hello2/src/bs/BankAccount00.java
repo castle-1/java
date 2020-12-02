@@ -1,4 +1,4 @@
-package rec;
+package bs;
 
 public class BankAccount00 {
 
