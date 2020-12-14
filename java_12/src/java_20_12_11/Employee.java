@@ -51,7 +51,7 @@ class Regular extends Employee{
 	}
 	
 	public void printInfo() {
-		System.out.println(setter);
+		System.out.println("월급 : "+setter);
 		System.out.println("정규직" );
 		
 		

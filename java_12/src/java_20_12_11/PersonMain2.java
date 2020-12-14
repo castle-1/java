@@ -16,7 +16,7 @@ public class PersonMain2 {
 
 		while (tf) {
 			sc = new Scanner(System.in);
-			enter = sc.nextLine(); 
+			enter = sc.nextLine(); //키보드상 enter = \r\n
 			//\n을 포함하는 한 라인을 읽고 \n 을 버린 나머지만 리턴
 
 			if (enter.trim().equals("")) {
