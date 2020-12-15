@@ -68,7 +68,7 @@ class Rectangle extends Shape {
 	}
 }
 
-class Point {
+class Point { 
 	int x;
 	int y;
 
