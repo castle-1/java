@@ -13,10 +13,20 @@ public class StringStack implements Stack {
 
 	}
 
+	public boolean stackNull() {
+		if((stack == null)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+	
+
 	@Override
 	public int length() {
 
-		return top;// 만약 사이즈가 10, top이 7이라면 7개가 저장
+		return size;// 만약 사이즈가 10, top이 7이라면 7개가 저장
 	}
 
 	@Override
