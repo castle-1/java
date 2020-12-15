@@ -43,7 +43,7 @@ public class Buyer {
 			cart[i] = p;
 			
 		}
-		i++; // 장바구니 크기 하나증가 else 문에 쓰면 x 3일때 i가 증가x
+		i++; // 장바구니 크기 하나증가 else 문에 쓰면x 3일때 i가 증가x
 
 	}
 

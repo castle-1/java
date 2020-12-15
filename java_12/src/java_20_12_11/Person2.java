@@ -26,7 +26,7 @@ public class Person2 {
 
 	public void iput() {
 
-		System.out.print("겜블링 게임에 참여할 선수 숫자 >>");
+		System.out.print("갬블링 게임에 참여할 선수 숫자 >>");
 		sc = new Scanner(System.in);
 		this.playerMax = sc.nextInt();
 
