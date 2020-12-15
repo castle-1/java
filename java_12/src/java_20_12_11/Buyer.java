@@ -36,14 +36,18 @@ public class Buyer {
 		if (i >= cart.length) { //i=3 일때 실행
 			Product[] doubleCart = new Product[cart.length * 2];
 			System.arraycopy(cart, 0, doubleCart, 0, cart.length); // p의 0번부터 cart.length길이만큼 doubleCart에 복사
-			cart = doubleCart; // 기존-> 새로운 장바구니
+			cart = doubleCart; // 기존-> 새로운 장바구니 , cart에 doubleCart주소를 대입, doubleCart의 범위는 add까지
 			cart[i] = p; // i=3 이기 때문에 복사한 다음번지부터 저장가능
 
 		} else { // 장바구니보다 크지 않다면
 			cart[i] = p;
-			
+			//cart[i++] = p; 도 가능 아래 i++삭제
 		}
+
 		i++; // 장바구니 크기 하나증가 else 문에 쓰면x 3일때 i가 증가x
+
+	
+
 
 	}
 
@@ -73,7 +77,7 @@ class Tv extends Product {
 	public Tv() {
 		super(100);
 	}
-
+	@Override
 	public String toString() {
 		return "Tv";
 	}
@@ -83,7 +87,7 @@ class Computer extends Product {
 	public Computer() {
 		super(200);
 	}
-
+	@Override
 	public String toString() {
 		return "Computer";
 
@@ -94,7 +98,7 @@ class Audio extends Product {
 	public Audio() {
 		super(50);
 	}
-
+	@Override
 	public String toString() {
 		return "Audio";
 	}
