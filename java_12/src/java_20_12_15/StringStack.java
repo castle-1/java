@@ -26,18 +26,18 @@ public class StringStack implements Stack {
 	@Override
 	public int length() {
 
-		return size;// 만약 사이즈가 10, top이 7이라면 7개가 저장
+		return stack.length;// 만약 사이즈가 10, top이 7이라면 7개가 저장
 	}
 
 	@Override
 	public int capacity() {
 
-		return size - top; //비어있는 스택
+		return stack.length; //비어있는 스택
 	}
 
 	@Override
-	public String pop() {
-		int temp = top; // top = -1
+	public String pop() {//가장 최근에 입력된 문자열부터 출력
+		int temp = top; 
 		top++;
 		return stack[temp];
 	}

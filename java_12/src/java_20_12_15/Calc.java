@@ -1,7 +1,7 @@
 package java_20_12_15;
 
 abstract class Calc {
-	private int a, b;
+	protected int a, b;
 
 	abstract int Calculate();// 계산
 
@@ -11,7 +11,7 @@ abstract class Calc {
 
 	}
 
-	void setValue(int a, int b) {
+	public void setValue(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}
@@ -32,15 +32,13 @@ abstract class Calc {
 		this.b = b;
 	}
 
-	
-
 }
 
 class Add extends Calc {
 
-	public Add(int a, int b) {
+	public Add() {
 		super();
-		super.setValue(a, b);
+		
 
 	}
 
@@ -54,9 +52,9 @@ class Add extends Calc {
 
 class Sub extends Calc {
 
-	public Sub(int a, int b) {
+	public Sub() {
 		super();
-		super.setValue(a, b);
+		
 
 	}
 
@@ -70,9 +68,9 @@ class Sub extends Calc {
 
 class Mul extends Calc {
 
-	public Mul(int a, int b) {
+	public Mul() {
 		super();
-		super.setValue(a, b);
+	
 
 	}
 
@@ -86,9 +84,9 @@ class Mul extends Calc {
 
 class Div extends Calc {
 
-	public Div(int a, int b) {
+	public Div() {
 		super();
-		super.setValue(a, b);
+		
 
 	}
 

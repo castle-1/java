@@ -77,14 +77,8 @@ class Calculator2 implements Caculator { //인터페이스 상속
 
 	@Override
 	public int div(int x, int y) {
-		int temp = 0;
-		temp = x / y;
-		try {
-			y = 0;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return temp;
+		
+		return x/y;
 	}
 
 }

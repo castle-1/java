@@ -6,7 +6,7 @@ public class StackApp {
 
 	public static void main(String[] args) {
 		int size; // 배열의 크기, 스택 크기
-		int count = 0; // 현재 스택의 크기
+		
 		String val;
 		Scanner sc = null;
 
@@ -20,7 +20,7 @@ public class StackApp {
 		} while (size <= 0);
 
 		StringStack stack = new StringStack(size);
-		count = stack.length(); //스택에 저장된 수, 
+		
 		//문자열을 입력할때마다 top은 하나씩줄음 줄기전에 초기값을 저장
 		while (true) {
 			

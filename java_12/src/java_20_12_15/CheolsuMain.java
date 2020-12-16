@@ -8,7 +8,7 @@ public class CheolsuMain {
 		Scanner sc = new Scanner(System.in);
 		int x = 0;
 		int y = 0;
-		char op=' ';
+		char op = ' ';
 		int retry;
 
 		do {
@@ -21,32 +21,33 @@ public class CheolsuMain {
 			} catch (Exception e) {
 				System.out.println("잘못입력하셨습니다.");
 			}
-
-			Calc add = new Add(x, y);
-			Calc sub = new Sub(x, y);
-			Calc mul = new Mul(x, y);
-			Calc div = new Div(x, y);
+			Calc calc = null;
 
 			switch (op) {
 			case '+': {
+				calc = new Add();
 
-				System.out.println(add.Calculate());
 				break;
 			}
 			case '-': {
-				System.out.println(sub.Calculate());
+				calc = new Sub();
+
 				break;
 			}
 			case '*': {
-				System.out.println(mul.Calculate());
+				calc = new Mul();
+
 				break;
 			}
 			case '/': {
-				System.out.println(div.Calculate());
+				calc = new Div();
+
 				break;
 			}
 
 			}
+			calc.setValue(x, y);
+			System.out.println(calc.Calculate());
 
 			System.out.println("계속 하시겠습니까? (1. yes/ 2. no)");
 			retry = sc.nextInt();
