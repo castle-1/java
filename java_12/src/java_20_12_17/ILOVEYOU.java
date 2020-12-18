@@ -22,14 +22,14 @@ public class ILOVEYOU {
 
 		do {
 			System.out.println("왼쪽으로 쉬프트 합니다.");
+			
 			char temp = rotation[0];
-
 			for (int i = 0; i < rotation.length - 1; i++) {
 				rotation[i] = rotation[i + 1];
 
 			}
-
 			rotation[rotation.length - 1] = temp;
+			
 
 			for (int i = 0; i < rotation.length; i++) {
 				System.out.print(rotation[i]);
