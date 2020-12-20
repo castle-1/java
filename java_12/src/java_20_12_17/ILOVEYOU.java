@@ -20,13 +20,14 @@ public class ILOVEYOU {
 		}
 
 		do {
+
 			System.out.println("오른쪽으로 쉬프트 합니다.");
-			
+
 			char temp = rotation[rotation.length - 1];
 
-			for (int i = rotation.length - 1; i>0; i--) {
-				 rotation[i] =rotation[i-1];
+			for (int i = rotation.length - 1; i > 0; i--) {
 
+				rotation[i] = rotation[i - 1];
 			}
 
 			rotation[0] = temp;
@@ -37,11 +38,9 @@ public class ILOVEYOU {
 			System.out.println();
 
 			System.out.println("한번더 쉬프트 하시겠습니까?(1. yes / 2. no)");
-			retry= sc.nextInt();
+			retry = sc.nextInt();
 		} while (retry == 1);
 
 		sc.close();
-
 	}
-
 }
