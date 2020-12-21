@@ -32,7 +32,7 @@ class Orange {
 	}
 }
 
-class Box<T> {
+class Box<T> { //<T> 타입 매개변수
 	private T ob;
 
 	public void set(T o) {
