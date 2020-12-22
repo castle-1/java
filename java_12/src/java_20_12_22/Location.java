@@ -5,10 +5,10 @@ package java_20_12_22;
 public class Location {
 	
 	
-	private int longitude;
-	private int latitude;
+	private int longitude;//위도
+	private int latitude;//경도
 	
-	public Location(int longitude, int latitude) {
+	public Location(int longitude, int latitude) { //생성자
 		this.longitude = longitude;
 		this.latitude = latitude;
 	}

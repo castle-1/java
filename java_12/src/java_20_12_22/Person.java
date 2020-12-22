@@ -9,9 +9,9 @@ public class Person {
 		this.age = age;
 	}
 	@Override
-	public int hashCode() {
+	public int hashCode() {//오버라이딩 하지 않는다면 object클래스에 정의된 주소값으로 집합을 만든다.
 		
-		return age%2;
+		return age%2; //2로 나눈 나머지로 집합을 만들겠다는 것은 0과 1의 집합을 구성
 	}
 	
 	@Override

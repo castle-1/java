@@ -11,7 +11,7 @@ public class Hash {
 		set.add(new Num(7799));//equals는 맞지만 hashcode는 다름
 		set.add(new Num(9955));
 		// 오버라이딩하지 않으면 집합이 객체의 주소값으로 된다. 즉, 7799주소(100번지), 9955주소(200번지), 7799주소(300번지)
-		set.add(new Num(7799));//
+		set.add(new Num(7798));//
 		
 		System.out.println("인스턴스 수 : " + set.size()); //size는 3 
 		
@@ -35,7 +35,7 @@ class Num {
 	@Override
 	public int hashCode() {//해쉬코드의 값을 같게하기위해 분류
 		
-		return num%3; //오버라이딩 하지않고 object의 hashcoed는 주소값을 리턴한다.
+		return num%2; //오버라이딩 하지않고 object의 hashcoed는 주소값을 리턴한다.
 	}
 
 
