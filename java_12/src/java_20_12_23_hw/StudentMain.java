@@ -32,10 +32,10 @@ public class StudentMain {
 			sc = new Scanner(System.in);
 			boolean count = false;
 			String student;
-			
+
 			System.out.print("학생 이름 >>");
 			student = sc.next();
-			
+
 			if (student.equals("그만")) {
 				sc.close();
 				return;
@@ -44,7 +44,7 @@ public class StudentMain {
 
 				if (stu.get(i).getName().equals(student)) {
 					count = true;
-					
+
 				}
 				if (count) {
 					stu.get(i).search();

@@ -1,6 +1,7 @@
 package java_20_12_23_hw;
 
 import java.util.HashMap;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class Scholarship {
@@ -12,6 +13,7 @@ public class Scholarship {
 
 	public Scholarship() {
 		sch = new HashMap<String, Double>();
+
 	}
 
 	@Override
@@ -19,8 +21,14 @@ public class Scholarship {
 
 		return name + " ";
 	}
+	
+	public void run() {
+		input();
+		selection();
+		
+	}
 
-	public void input() {
+	private void input() {
 		System.out.println("미래장학금관리시스템입니다.");
 
 		while (true) {
@@ -39,19 +47,29 @@ public class Scholarship {
 
 	}
 
-	public void selection() {
+	private void selection() {
 		double sel;
 		System.out.print("장학생 선발 학점 기준 입력 >>");
 		sel = sc.nextDouble(); // 기준 입력한 기준보다 높은 value의 key출력
 
-		System.out.println("장학생명단 : ");
-		for (String s : sch.keySet()) {
-			if (sch.get(s) > sel) {
-				System.out.println(sch.keySet());
+		System.out.print("장학생명단 : ");
 
+		for (Entry<String, Double> e : sch.entrySet()) { //키와 벨류 한쌍을 가지고있는 객체
+			if (e.getValue() > sel) {
+				System.out.print(e.getKey() + "\t");
 			}
+
 		}
 
+		/*
+		 * for (Double d : sch.values()) { if (d> sel) {
+		 * System.out.println(sch.entrySet()); //System.out.print(d.toString() + "\t");
+		 * 
+		 * }
+		 * 
+		 * 
+		 * }
+		 */
 	}
 
 }
