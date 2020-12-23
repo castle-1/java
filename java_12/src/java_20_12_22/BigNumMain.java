@@ -5,7 +5,5 @@ public class BigNumMain {
 		BigNum bigNum = new BigNum();
 		bigNum.run();
 	}
-	
-	
 
 }
